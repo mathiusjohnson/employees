@@ -13,10 +13,11 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run build:css && react-scripts start",
+    "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css"
   },
   "eslintConfig": {
     "extends": [
@@ -39,11 +40,15 @@
   },
   "devDependencies": {
     "@reduxjs/toolkit": "^1.4.0",
+    "autoprefixer": "^10.0.1",
     "bootstrap": "^4.5.3",
     "cypress": "^5.5.0",
     "eslint-plugin-cypress": "^2.11.2",
+    "postcss": "^8.1.4",
+    "postcss-cli": "^8.0.0",
     "react-bootstrap": "^1.4.0",
     "react-redux": "^7.2.2",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "tailwindcss": "^1.9.6"
   }
 }

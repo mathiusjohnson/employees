@@ -1,15 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import UserCards from './features/users/UserCards';
-import './App.css';
+import './styles/main.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <UserCards />
-      
-      </header>
+    <div class="h-64">
+      <div class="p-4 m-4 bg-green-600">
+
+          <UserCards />
+
+      </div>
+      <div class="p-4 m-4 bg-green-300 h-full">
+
+      </div>
     </div>
   );
 }
