@@ -4,14 +4,9 @@ import './styles/main.css';
 
 function App() {
   return (
-    <div class="h-64">
-      <div class="p-4 m-4 bg-green-600">
-
-          <UserCards />
-
-      </div>
-      <div class="p-4 m-4 bg-green-300 h-full">
-
+    <div class="h-64 font-sans">
+      <div class="p-4 m-4">
+        <UserCards />
       </div>
     </div>
   );

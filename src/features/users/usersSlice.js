@@ -7,7 +7,8 @@ const initialState = [
     photo: "https://raw.githubusercontent.com/mathiusjohnson/employees/master/public/images/Tianna.jpg",
     position: "Lead Division Developer",
     phone: "417-324-6722",
-    last_name: "Bode"
+    last_name: "Bode",
+    email: "lbode@company.ca"
   },
   {
     id: "2",
@@ -15,7 +16,8 @@ const initialState = [
     photo: "https://raw.githubusercontent.com/mathiusjohnson/employees/master/public/images/Kevin.jpg",
     position: "Chief Group Coordinator",
     phone: "686-329-4200",
-    last_name: "McCullough"
+    last_name: "McCullough",
+    email: "lbode@company.ca"
   },
   {
     id: "3",
@@ -23,7 +25,8 @@ const initialState = [
     photo: "https://raw.githubusercontent.com/mathiusjohnson/employees/master/public/images/Madison.jpg",
     position: "Global Communications Manager",
     phone: "590-886-4164",
-    last_name: "Grimes"
+    last_name: "Grimes",
+    email: "lbode@company.ca"
   },
   {
     id: "4",
@@ -31,7 +34,8 @@ const initialState = [
     photo: "https://raw.githubusercontent.com/mathiusjohnson/employees/master/public/images/Tianna.jpg",
     position: "Lead Division Developer",
     phone: "417-324-6722",
-    last_name: "Bode"
+    last_name: "Bode",
+    email: "lbode@company.ca"
   },
   {
     id: "5",
@@ -39,7 +43,8 @@ const initialState = [
     photo: "https://raw.githubusercontent.com/mathiusjohnson/employees/master/public/images/Kevin.jpg",
     position: "Chief Group Coordinator",
     phone: "686-329-4200",
-    last_name: "McCullough"
+    last_name: "McCullough",
+    email: "lbode@company.ca"
   },
   {
     id: "6",
@@ -47,7 +52,8 @@ const initialState = [
     photo: "https://raw.githubusercontent.com/mathiusjohnson/employees/master/public/images/Madison.jpg",
     position: "Global Communications Manager",
     phone: "590-886-4164",
-    last_name: "Grimes"
+    last_name: "Grimes",
+    email: "lbode@company.ca"
   },
   {
     id: "7",
@@ -55,7 +61,8 @@ const initialState = [
     photo: "https://raw.githubusercontent.com/mathiusjohnson/employees/master/public/images/Tianna.jpg",
     position: "Lead Division Developer",
     phone: "417-324-6722",
-    last_name: "Bode"
+    last_name: "Bode",
+    email: "lbode@company.ca"
   },
   {
     id: "8",
@@ -63,7 +70,8 @@ const initialState = [
     photo: "https://raw.githubusercontent.com/mathiusjohnson/employees/master/public/images/Kevin.jpg",
     position: "Chief Group Coordinator",
     phone: "686-329-4200",
-    last_name: "McCullough"
+    last_name: "McCullough",
+    email: "lbode@company.ca"
   },
   {
     id: "9",
@@ -71,7 +79,8 @@ const initialState = [
     photo: "https://raw.githubusercontent.com/mathiusjohnson/employees/master/public/images/Madison.jpg",
     position: "Global Communications Manager",
     phone: "590-886-4164",
-    last_name: "Grimes"
+    last_name: "Grimes",
+    email: "lbode@company.ca"
   }
 ]
 

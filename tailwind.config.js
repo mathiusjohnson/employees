@@ -133,6 +133,9 @@ module.exports = {
         800: '#97266d',
         900: '#702459',
       },
+      turquoise: '#4fb9d8',
+      cyan: '#dff4f7',
+      slateblue: '#1b478f'
     },
     spacing: {
       px: '1px',
@@ -251,23 +254,10 @@ module.exports = {
       default: '1',
     },
     fontFamily: {
-      sans: [
-        'system-ui',
-        '-apple-system',
-        'BlinkMacSystemFont',
-        '"Segoe UI"',
-        'Roboto',
-        '"Helvetica Neue"',
-        'Arial',
-        '"Noto Sans"',
-        'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-        '"Noto Color Emoji"',
-      ],
+      sans: ['Signika, sans-serif'],
       serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
+      'signika': ['Signika, sans-serif']
     },
     fontSize: {
       xs: '0.75rem',
@@ -703,6 +693,12 @@ module.exports = {
         },
       },
     },
+    extend: {
+      spacing: {
+        '72': '18rem',
+        '84': '21rem',
+        '96': '24rem',      }
+    }
   },
   variants: {
     accessibility: ['responsive', 'focus'],
