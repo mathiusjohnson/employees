@@ -23,7 +23,7 @@ const initialState = [
     id: "3",
     first_name: "Paula",
     photo: "https://raw.githubusercontent.com/mathiusjohnson/employees/master/public/images/Madison.jpg",
-    position: "Global Communications Manager",
+    position: "Global Communications Manager of Really long names",
     phone: "590-886-4164",
     last_name: "Grimes",
     email: "lbode@company.ca"
@@ -77,7 +77,7 @@ const initialState = [
     id: "9",
     first_name: "Paula",
     photo: "https://raw.githubusercontent.com/mathiusjohnson/employees/master/public/images/Madison.jpg",
-    position: "Global Communications Manager",
+    position: "Global Communications Manager of Really long names",
     phone: "590-886-4164",
     last_name: "Grimes",
     email: "lbode@company.ca"

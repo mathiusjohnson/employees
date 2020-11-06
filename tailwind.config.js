@@ -697,7 +697,11 @@ module.exports = {
       spacing: {
         '72': '18rem',
         '84': '21rem',
-        '96': '24rem',      }
+        '96': '24rem',      
+      },
+      backgroundImage: theme => ({
+                 'square-tiles': "url('https://www.transparenttextures.com/patterns/transparent-square-tiles.png')"
+      })
     }
   },
   variants: {
