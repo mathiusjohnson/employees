@@ -5,7 +5,7 @@ import { CardGroup } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faBookOpen } from '@fortawesome/free-regular-svg-icons';
 import { faPhone, faEnvelope, faBookOpen } from '@fortawesome/free-solid-svg-icons';
-import styles from './UserCards.scss'
+import './UserCards.scss'
 
 const UserCards = () => {
 
@@ -13,8 +13,8 @@ const UserCards = () => {
 
   const renderedUsers = users.map(user => (
     <div class="group p-10 mt-20 w-96 ">
-      <Card class="flex flex-col group-hover:shadow-xl"> 
-        <Card.Body class="h-96 bg-square-tiles bg-cyan rounded">
+      <Card class="flex flex-col"> 
+        <Card.Body class="h-96 bg-square-tiles bg-cyan rounded group-hover:shadow-xl">
           <Card.Img class="-mt-24 object.contain h-48 w-48 mx-auto rounded-full h-16 w-16 shadow-xs group-hover:shadow-2xl" variant="top" src={user.photo} />
           <div class="flex flex-col space-y-4 mt-8 text-center">
             <div class="mx-auto inline-block align-middle">
