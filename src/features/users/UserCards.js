@@ -13,32 +13,50 @@ const UserCards = () => {
 
   const renderedUsers = users.map(user => (
     <div class="group p-10 mt-20 w-96 ">
-      <Card class="flex flex-col"> 
+      <Card class="flex flex-col card"> 
+        
         <Card.Body class="h-96 bg-square-tiles bg-cyan rounded group-hover:shadow-xl">
-          <Card.Img class="-mt-24 object.contain h-48 w-48 mx-auto rounded-full h-16 w-16 shadow-xs group-hover:shadow-2xl" variant="top" src={user.photo} />
+          {/* USER PHOTO */}
+          <Card.Img class="-mt-24 object.contain h-48 w-48 mx-auto rounded-full shadow-xs group-hover:shadow-2xl" variant="top" src={user.photo} /> 
+
+          {/* FOR SPACE BETWEEN FULL NAME, POSITION AND EMPLOYEE DETAILS */}
           <div class="flex flex-col space-y-4 mt-8 text-center">
+
+            {/* VERTICALLY AND HORIZONTALLY CENTERS FULL NAME AND POSITION */}
             <div class="mx-auto inline-block align-middle">
+
+              {/* FULL NAME */}
               <h5 class="uppercase text-turquoise font-bold">{user.first_name} {user.last_name}
               </h5>
-                <p class="w-72 h-10 text-slateblue flex flex-col justify-center">{user.position}</p>
+
+              {/* POSITION */}
+              <p class="w-72 h-10 text-slateblue flex flex-col justify-center">{user.position}</p>
               <hr class="w-56 mx-auto bg-turquoise" />
             </div>
+
+            {/* FOR SPACE BETWEEN PHONE NUMBER, EMAIL AND SCHEDULE BUTTON */}
             <div class="text-center text-slateblue space-y-6">
-              <div class="text-center">
-                <a href={`tel:${user.phone}`} class="ml-2 text-slateblue">
+
+              {/* USER PHONE DETAILS */}
+              <div class="text-center mx-auto inline-block align-middle">
+                <a href={`tel:${user.phone}`} class="ml-2 text-slateblue contact-align">
                   <FontAwesomeIcon className="fa-upsize" icon={faPhone}/> 
                   <span class="ml-2">{user.phone}</span>
                 </a>
-              </div>    
+              </div> 
+
+              {/* USER EMAIL DETAILS */}
               <div>
-                <a href={`mailto: ${user.email}`} class="text-center text-slateblue">
-                  <FontAwesomeIcon className="fa-upsize" icon={faEnvelope}/>  
-                  <span class="ml-2">Email Me</span>
+                <a href={`mailto: ${user.email}`} class="text-center text-slateblue contact-align">
+                  <FontAwesomeIcon className="fa-upsize" icon={faEnvelope}/>
+                  <span class="ml-2 inline-block ">Email Me</span>
                 </a>
               </div>
             </div>
+
+            {/* SCHEDULE BUTTON */}
             <div class="flex justify-center">
-              <button class="bg bg-slateblue hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded w-72 focus:shadow-outline">
+              <button class="bg bg-slateblue hover:bg-blue-700 active:bg-slateblue text-white font-bold py-2 px-4 border border-blue-700 rounded w-72 contact-align button button-press -mt-1">
                 <FontAwesomeIcon className="fa-upsize" icon={faBookOpen}/>
                 <span class="ml-4">Schedule a Consultation</span>
               </button>
