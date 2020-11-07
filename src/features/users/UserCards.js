@@ -58,8 +58,8 @@ const UserCards = () => {
                 </a>
               </div> 
               : 
-              // MAYBE THIS IS HACKY?? WILL LOOK INTO BETTER SOLUTION
-              <div class="inline-block contact-align"><a href="notgonnawork"><span class="inline-block"></span></a></div> }
+              // MAYBE THIS IS A HACKY SOLUTION? WILL LOOK INTO A BETTER WAY TO IMPLEMENT THIS
+              <div class="contact-align"><a><span class="inline-block"></span></a></div> }
 
             </div>
 
