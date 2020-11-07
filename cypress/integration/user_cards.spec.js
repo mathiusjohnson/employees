@@ -1,3 +1,5 @@
+import cy from "cypress"
+
 describe('Viewing user cards', () => {
   it('shows a list of cards', () => {
     cy.visit('http://localhost:3000');
