@@ -30,7 +30,9 @@ const UserCards = () => {
               </h5>
 
               {/* POSITION */}
+              {user.position ? 
               <p class="w-72 h-10 text-slateblue flex flex-col justify-center">{user.position}</p>
+                : <p class="w-72 h-10"></p> }
               <hr class="w-56 mx-auto bg-turquoise" />
             </div>
 
@@ -38,20 +40,27 @@ const UserCards = () => {
             <div class="text-center text-slateblue space-y-6">
 
               {/* USER PHONE DETAILS */}
+              {user.phone ?               
               <div class="text-center mx-auto inline-block align-middle">
                 <a href={`tel:${user.phone}`} class="ml-2 text-slateblue contact-align">
                   <FontAwesomeIcon className="fa-upsize" icon={faPhone}/> 
                   <span class="ml-2">{user.phone}</span>
                 </a>
-              </div> 
+              </div> : <div class="inline-block"></div>}
+
 
               {/* USER EMAIL DETAILS */}
+              {user.email ? 
               <div>
                 <a href={`mailto: ${user.email}`} class="text-center text-slateblue contact-align">
                   <FontAwesomeIcon className="fa-upsize" icon={faEnvelope}/>
                   <span class="ml-2 inline-block ">Email Me</span>
                 </a>
-              </div>
+              </div> 
+              : 
+              // MAYBE THIS IS HACKY?? WILL LOOK INTO BETTER SOLUTION
+              <div class="inline-block contact-align"><a href="notgonnawork"><span class="inline-block"></span></a></div> }
+
             </div>
 
             {/* SCHEDULE BUTTON */}
